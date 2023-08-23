@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  backend:
+    image: go-color-backend
+    # build:
+    #   context: .
+    #   dockerfile: docker/Dockerfile
+    tty: true
+    volumes:
+      - ./:/app
